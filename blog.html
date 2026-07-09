@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kumpulan Artikel Kalibrasi - Kalpindo</title>
+    
+    <!-- Fonts: Inter - Self-hosted (no internet required) -->
+    <link href="assets/fonts/inter.css" rel="stylesheet">
+    
+    <!-- Phosphor Icons - Self-hosted -->
+    <script src="assets/icons/phosphor.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="assets/js/tailwindcss.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            red: '#C81E26',
+                            orange: '#F59D3F',
+                            silver: '#F4F4F5',
+                            slate: '#0F172A',
+                            gray: '#E2E8F0',
+                            dark: '#1E293B'
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 20px 40px -15px rgba(0,0,0,0.05)',
+                        'float': '0 30px 60px -20px rgba(0,0,0,0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-[#F8FAFC] text-brand-dark font-sans antialiased">
+    
+    <!-- Top Bar -->
+    <div class="bg-brand-slate text-white/80 py-2.5 text-xs md:text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2"><i class="ph-fill ph-envelope"></i> info@kalpindo.co.id</span>
+                <span class="flex items-center gap-2"><i class="ph-fill ph-phone"></i> 0812-3456-7890</span>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="ph-fill ph-clock text-brand-orange"></i> Senin - Jumat: 08:00 - 17:00 WIB
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white/80 backdrop-blur-xl border-b border-gray-200/50 sticky top-0 z-40 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+            <!-- Logo -->
+            <a href="index.html" class="flex items-center">
+                <img src="assets/img/logo.png" alt="Logo Kalpindo" class="h-10 object-contain">
+            </a>
+
+            <!-- Links -->
+            <div class="hidden lg:flex items-center gap-8 font-medium text-brand-dark/80">
+                <a href="index.html#beranda" class="hover:text-brand-red transition-colors">Beranda</a>
+                <a href="index.html#ruang-lingkup" class="hover:text-brand-red transition-colors">Ruang Lingkup</a>
+                <a href="index.html#layanan" class="hover:text-brand-red transition-colors">Layanan</a>
+                <a href="index.html#kontak" class="hover:text-brand-red transition-colors">Tentang Kami</a>
+            </div>
+
+            <a href="index.html#kontak" class="hidden md:inline-flex bg-brand-red text-white px-7 py-3 rounded-full hover:bg-red-800 transition-all font-medium items-center gap-2 shadow-lg shadow-brand-red/30 hover:-translate-y-0.5">
+                Hubungi Kami <i class="ph ph-arrow-right"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Header -->
+        <section class="pt-16 pb-12 bg-white">
+            <div class="max-w-7xl mx-auto px-6 text-center gs-reveal relative">
+                <a href="index.html" class="absolute left-6 top-0 inline-flex items-center gap-2 text-gray-500 hover:text-brand-red mb-6 transition-colors md:relative md:left-0 md:float-left">
+                    <i class="ph-bold ph-arrow-left"></i> Kembali ke Beranda
+                </a>
+                <div class="clear-both"></div>
+                <h1 class="text-4xl md:text-5xl font-bold text-brand-dark mb-6 leading-tight mt-8 md:mt-0">Semua Artikel & Edukasi</h1>
+                <p class="text-gray-500 max-w-2xl mx-auto">Temukan berbagai informasi penting seputar dunia kalibrasi, standar industri, dan tips operasional yang dapat meningkatkan kualitas dan keamanan bisnis Anda.</p>
+            </div>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="py-12 bg-white">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Article 1 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/lab_temp.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Artikel Kalibrasi">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Edukasi Kalibrasi</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Mengapa Kalibrasi Rutin Wajib Dilakukan di Industri?</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Alat ukur yang tidak dikalibrasi dapat menghasilkan data yang menyesatkan, berdampak pada kualitas produk dan keselamatan kerja.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Article 2 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/lab_mass.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="ISO 17025">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Standar Internasional</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Apa itu ISO/IEC 17025 dan Mengapa Penting bagi Klien?</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Sertifikat yang diterbitkan oleh laboratorium terakreditasi ISO 17025 memiliki nilai hukum yang diakui dan dapat diverifikasi secara global.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Article 3 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/onsite_calibration.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="On-Site Calibration">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Tips Industri</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Kapan Harus Pilih Kalibrasi In-Lab vs. On-Site?</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Beberapa jenis alat tidak bisa dipindahkan. Ketahui kondisi mana yang mengharuskan Anda memilih layanan kalibrasi langsung di lokasi.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Article 4 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/lab_dimension.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Alat Dimensi">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Manufaktur Presisi</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Pentingnya Kalibrasi Alat Ukur Dimensi pada CNC</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Kesalahan mikro pada alat ukur dimensi dapat menyebabkan gagal produk yang merugikan. Pelajari standar toleransi untuk komponen mekanis.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Article 5 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/lab_pressure.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Alat Tekanan">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Keselamatan Kerja</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Mencegah Kebocoran Pipa dengan Kalibrasi Pressure Gauge</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Pressure gauge yang tidak akurat adalah bom waktu di pabrik kimia. Kalibrasi rutin menekan risiko kegagalan instrumen fatal hingga 95%.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Article 6 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/hero_lab.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Laboratorium Internal">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Manajemen Kualitas</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Cara Mengatur Jadwal Kalibrasi Alat untuk Pabrik Skala Besar</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Strategi manajemen kalibrasi agar operasional pabrik tidak terganggu. Buat matriks penjadwalan yang efisien bersama tim QC Anda.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Article 7 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/lab_mass.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Alat Kalibrasi">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Audit & Sertifikasi</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Panduan Persiapan Audit ISO 9001 untuk Departemen QC</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Jangan sampai gagal audit hanya karena sertifikat kalibrasi kedaluwarsa. Ikuti checklist lengkap ini untuk persiapan audit tahunan.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Article 8 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/lab_temp.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Temperatur Kalibrasi">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Food & Beverage</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Regulasi Suhu Penyimpanan Makanan: Peran Penting Kalibrasi Termometer</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Industri makanan sangat bergantung pada suhu. Suhu yang tidak akurat bisa merusak batch produksi senilai ratusan juta rupiah.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Article 9 -->
+                    <div class="bg-[#F8FAFC] rounded-[2rem] overflow-hidden border border-gray-100 hover:-translate-y-2 hover:shadow-float transition-all duration-300 gs-reveal group">
+                        <div class="h-48 overflow-hidden">
+                            <img src="assets/img/hero_lab.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Laboratorium">
+                        </div>
+                        <div class="p-8">
+                            <span class="text-xs font-bold uppercase tracking-widest text-brand-red">Teknologi Lab</span>
+                            <h3 class="text-xl font-bold text-brand-dark mt-3 mb-3 leading-snug">Tren Digitalisasi Laboratorium Kalibrasi di Era Industri 4.0</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed mb-6">Bagaimana sistem LIMS (Laboratory Information Management System) membantu mempercepat proses penerbitan sertifikat dengan lebih akurat.</p>
+                            <a href="artikel.html" class="inline-flex items-center gap-2 font-semibold text-brand-red text-sm group-hover:gap-4 transition-all">Baca Selengkapnya <i class="ph-bold ph-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-slate pt-20 pb-8 border-t border-white/5 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('assets/img/hero_lab.png')] opacity-5 mix-blend-overlay"></div>
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 mb-16 relative z-10">
+            <!-- Company Info -->
+            <div class="md:col-span-4">
+                <img src="assets/img/logo.png" alt="Logo Kalpindo" class="h-12 mb-8 bg-white/10 backdrop-blur-sm p-2 rounded-xl object-contain border border-white/10">
+                <p class="text-gray-400 mb-8 leading-relaxed text-sm">
+                    PT Kalibrasi Pengujian Indonesia (Kalpindo) adalah mitra terpercaya Anda untuk solusi kalibrasi presisi dan pengujian.
+                </p>
+            </div>
+            <!-- Quick Links -->
+            <div class="md:col-span-3 lg:col-span-2">
+                <h3 class="text-lg font-bold mb-6 text-white">Tautan Cepat</h3>
+                <ul class="space-y-4 text-gray-400 text-sm font-medium">
+                    <li><a href="index.html" class="hover:text-brand-orange transition-colors flex items-center gap-2"><i class="ph ph-caret-right"></i> Beranda</a></li>
+                </ul>
+            </div>
+            <!-- Contact & Map Card -->
+            <div class="md:col-span-5 lg:col-span-6">
+                <h3 class="text-lg font-bold mb-6 text-white">Kontak Kami</h3>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/5">
+                        <i class="ph-fill ph-phone text-brand-red text-xl"></i>
+                        <span>0812-3456-7890 / 7891</span>
+                    </li>
+                    <li class="flex items-center gap-3 bg-white/5 p-4 rounded-2xl border border-white/5">
+                        <i class="ph-fill ph-envelope text-brand-red text-xl"></i>
+                        <span>info@kalpindo.co.id</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-white/10 text-center text-sm text-gray-500 relative z-10">
+            © 2026 PT Kalibrasi Pengujian Indonesia. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Kalpindo%2C%20saya%20ingin%20menanyakan%20layanan%20kalibrasi." target="_blank"
+       class="fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-[#25D366] text-white px-5 py-3.5 rounded-full shadow-2xl hover:scale-105 hover:shadow-green-400/40 transition-all duration-300 group">
+        <i class="ph-fill ph-whatsapp-logo text-2xl"></i>
+        <span class="font-semibold text-sm hidden group-hover:inline-block transition-all">Hubungi Kami</span>
+    </a>
+
+    <!-- GSAP -->
+    <script src="assets/js/gsap.min.js"></script>
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
