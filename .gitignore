@@ -3,3 +3,6 @@ AI_SOP_PROMPT_FLOW.md
 .DS_Store
 node_modules/
 .env
+.vercel
+*.log
+url gambar.md
