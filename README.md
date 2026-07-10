@@ -13,7 +13,7 @@ Website ini dibangun menggunakan pendekatan *static site* yang ringan, modern, d
 
 ## 📂 Struktur Direktori
 
-```text
+```text  
 ├── assets/
 │   ├── css/          # File CSS tambahan dan utilitas (styles.css)
 │   ├── fonts/        # Font lokal (Inter) agar tidak bergantung pada koneksi luar
